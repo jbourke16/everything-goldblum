@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Everything Goldblum",
+    "description": "Jeff Goldblum Image Extension",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "version": "1.0",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "./images/jgoldblumicon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./content/content.js"]
+        }
+    ]
+  }
